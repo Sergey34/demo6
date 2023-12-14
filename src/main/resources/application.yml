@@ -1,0 +1,18 @@
+greeting:
+  message: "hello"
+quarkus:
+  cache:
+    redis:
+      expensiveResourceCache.value-type: java.lang.String
+      expensiveResourceCache.key-type: java.lang.String
+  http:
+    port: 8181
+  redis:
+    devservices:
+      enabled: true
+  micrometer:
+    export:
+      prometheus:
+        enabled: true
+        path: /metrics
+
